@@ -1,7 +1,8 @@
 import java.util.*;
-
-public class LAB5_1 {
-    public static void main(String[] args) {
+public class LAB5_1
+{
+    public static void main(String[] args)
+    {
         Kiitian kiitian = new Kiitian();
         kiitian.getInput();
         System.out.println("Roll number: " + kiitian.rollNo);
@@ -9,17 +10,20 @@ public class LAB5_1 {
         System.out.println("Course: " + kiitian.course());
     }
 
-    static class Kiitian extends Student {
+    static class Kiitian extends Student
+    {
         String course() {
             return "B.Tech. (Computer Science & Engg)";
         }
     }
 
-    abstract static class Student {
+    abstract static class Student
+    {
         int rollNo;
         int regNo;
 
-        void getInput() {
+        void getInput()
+        {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Enter roll number:");
             rollNo = scanner.nextInt();
