@@ -3,8 +3,10 @@
 package lab_1;
 
 import java.util.*;
- class exp1{
-    public static void main(String args[]) {
+ class exp1
+ {
+    public static void main(String[] args)
+    {
         Scanner sc = new Scanner(System.in);
         String name,branch;
         int roll,section;
